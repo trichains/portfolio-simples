@@ -1,0 +1,12 @@
+* {
+  font-family: 'Fira Sans', Arial, sans-serif;
+  color: #141414;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
