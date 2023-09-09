@@ -20,7 +20,7 @@
   text-indent: 20px;
 }
 
-.footer-texto::before {
+.footer-container p::before {
   content: "";
   width: 14px;
   height: 20px;
