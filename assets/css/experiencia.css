@@ -23,6 +23,11 @@
   color: #141414;
 }
 
+.destaque {
+  font-weight: bold;
+color: #2C5680;
+}
+
 .empresa {
   position: relative;
   display: grid;

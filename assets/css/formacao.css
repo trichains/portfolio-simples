@@ -41,6 +41,12 @@
   color: white;
 }
 
+.origamid {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #846E92;
+}
+
 .curso-lista {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 colunas com largura igual */
