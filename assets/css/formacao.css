@@ -1,0 +1,159 @@
+.formacao {
+  background-color: #141414;
+  color: white;
+}
+
+.formacao-container {
+  position: relative;
+  max-width: 1200px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+
+.formacao-container::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url(../img/fita-detalhe.svg) no-repeat center;
+  position: absolute;
+  bottom: -50px;
+  left: 20px;
+}
+
+.formacao .subtitulo {
+  color: #000;
+  max-width: 5ch;
+}
+
+.formacao-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  margin-bottom: 60px;
+  max-width: 40ch;
+  color: #a3a3a3;
+}
+
+.formacao-texto strong {
+  color: white;
+}
+
+.curso-lista {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas com largura igual */
+  gap: 20px;
+  margin-bottom: 60px;
+}
+
+.curso {
+  background-color: black;
+  padding: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.curso-site {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: #a3a3a3;
+  margin-bottom: 10px;
+}
+
+.curso-aula {
+  flex: 1;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.curso-aula::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#83a2c0, #2c5680);
+  position: absolute;
+  left: -24px;
+}
+
+.curso-estado {
+  font-size: 1.125rem;
+  color: #a3a3a3;
+}
+
+.intensivos {
+  margin-bottom: 60px;
+}
+
+.form-extra h3 {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.form-extra h3::before {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -36px;
+  top: -4px;
+}
+
+.intensivos h3::before {
+  background: url(../img/cursos-intensivos-icon.svg) no-repeat center center;
+}
+
+.idiomas h3::before {
+  background: url(../img/idiomas-icon.svg) no-repeat center center;
+}
+
+.form-extra li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.form-extra span {
+  color: #8f8f8f;
+}
+
+.intensivos li {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Adicione um estilo personalizado para telas menores, se desejar */
+@media (max-width: 800px) {
+  .formacao-container {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+
+  .formacao .subtitulo {
+    color: white;
+  }
+
+  .formacao-texto {
+    font-size: 1.25rem;
+  }
+
+  .form-extra h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
+
+  .curso-lista {
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas menores */
+  }
+}

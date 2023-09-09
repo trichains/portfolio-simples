@@ -4,8 +4,4 @@
 @import url(introducao.css);
 @import url(experiencia.css);
 @import url(formacao.css);
-
-* {
-  margin: 0px;
-  padding: 0px;
-}
+@import url(footer.css);
