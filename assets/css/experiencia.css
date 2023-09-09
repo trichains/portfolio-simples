@@ -81,3 +81,31 @@
   background-color: white;
   padding: 5px 10px;
 }
+
+@media (max-width: 800px) {
+  .exp {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .exp .subtitulo {
+    color: #141414;
+  }
+
+  .exp-texto {
+    font-size: 1.25rem;
+  }
+
+  .empresa-ano {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+}
+
+@media (max-width: 400px) {
+  .empresa {
+    grid-template-columns: 1fr;
+  }
+}
