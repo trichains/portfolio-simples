@@ -54,6 +54,21 @@
   margin-bottom: 60px;
 }
 
+.certificado {
+  color: #DEEAF4;
+  margin-top: 12px;
+  text-decoration: underline;
+  position: relative;
+}
+
+.certificado::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background: url(../img/certificado.svg);
+  position: absolute;
+}
+
 .curso {
   background-color: black;
   padding: 20px;

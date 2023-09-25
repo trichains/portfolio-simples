@@ -27,7 +27,7 @@
     </header>
 
     <main class="intro">
-      <img src="assets/img/foto-perfil.jpg" alt="Foto Perfil" width="360" height="520" />
+      <img id="img-perfil" src="assets/img/foto-perfil.jpg" alt="Foto Perfil" width="360" height="520" />
       <div>
         <h1>
           Desenvolvedor<br />
@@ -35,6 +35,11 @@
           UX/UI Designer
         </h1>
         <p>Localizado em Campo Grande - MS</p>
+        <div class="redes">
+          <a href="https://facebook.com/crilordz" target="_blank" rel="external"><img src="./assets/img/redes/facebook.svg" alt="Facebook"></a>
+          <a href="https://github.com/crilord" target="_blank" rel="external"><img src="assets/img/redes/github.svg" alt="GitHub"></a>
+          <a href="https://linkedin.com/in/crilord" target="_blank" rel="external"><img src="assets/img/redes/linkedin.svg" alt="LinkedIn"></a>
+        </div>
       </div>
     </main>
 
@@ -42,12 +47,10 @@
       <h2 class="subtitulo">Experiência</h2>
       <div>
         <p class="exp-texto">
-          Desenvolvo pequenos projetos como o
-          <span class="destaque">Bikecraft</span> utilizando apenas
+          Desenvolvi pequenos projetos como o
+          <span class="destaque">Bikcraft</span> utilizando apenas
           <strong>HTML</strong>, <strong>CSS</strong> e
-          <strong>JavaScript</strong>. Para aplicativos web como a rede social
-          <span class="destaque">Dogs</span> eu trabalhei no
-          <strong>UX</strong> e <strong>UI Design</strong> do projeto.
+          <strong>JavaScript</strong>. Busco uma oportunidade no mercado de trabalho como desenvolvedor <span class="destaque">Front-end</span>.
         </p>
 
         <div class="empresa">
@@ -55,6 +58,7 @@
           <h3 class="empresa-titulo">Bikcraft</h3>
           <span class="empresa-titulo">Desenvolvedor Júnior</span>
           <p class="empresa-texto">
+            Um site para vendas de bicicletas.<br>
             No projeto Bikcraft eu trabalhei no desenvolvimento completo do
             HTML, CSS e JavaScript do site. Além disso, também estruturei o
             Design completo do projeto.
@@ -66,9 +70,69 @@
             <li>UX Design</li>
             <li>UI Design</li>
           </ul>
+          <button class="botao seta">
+            <a class="botao-texto" href="https://crilord.github.io/bikcraft/">ver projeto</a>
+          </button>         
+        </div>
+
+        
+        <div class="empresa">
+          <span class="empresa-ano">2023</span>
+          <h3 class="empresa-titulo">Wildbeast</h3>
+          <span class="empresa-titulo">Desenvolvedor Júnior</span>
+          <p class="empresa-texto">
+            Um site simples contendo informações sobre determinados animais.<br>
+            Trabalhei no desenvolvimento completo do
+            HTML e CSS do site.
+          </p>
+          <ul class="empresa-habilidades">
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+          <button class="botao seta">
+            <a class="botao-texto" href="https://crilord.github.io/projeto-wildbeast/">ver projeto</a>
+          </button>
+        </div>
+        
+        <div class="empresa">
+          <span class="empresa-ano">2023</span>
+          <h3 class="empresa-titulo">Login Animado</h3>
+          <span class="empresa-titulo">Desenvolvedor Júnior</span>
+          <p class="empresa-texto">
+            Um login básico com animação em JS.<br>
+            Trabalhei no desenvolvimento parcial do
+            HTML, CSS e JavaScript do site.
+          </p>
+          <ul class="empresa-habilidades">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+          <button class="botao seta">
+            <a class="botao-texto" href="https://crilord.github.io/login-animado/">ver projeto</a>
+          </button>
         </div>
 
         <div class="empresa">
+          <span class="empresa-ano">2023</span>
+          <h3 class="empresa-titulo">Flip Card</h3>
+          <span class="empresa-titulo">Desenvolvedor Júnior</span>
+          <p class="empresa-texto">
+            Um site simples com um card giratório feito apenas com HTML e CSS.<br>
+            Trabalhei no desenvolvimento completo do
+            HTML e CSS do site.
+          </p>
+          <ul class="empresa-habilidades">
+            <li>HTML</li>
+            <li>CSS</li>
+          </ul>
+          <button class="botao seta">
+            <a class="botao-texto" href="https://crilord.github.io/flip-card/">ver projeto</a>
+          </button>
+        </div>
+
+
+        <!-- <div class="empresa">
           <span class="empresa-ano">2023</span>
           <h3 class="empresa-titulo">Surfbot</h3>
           <span class="empresa-titulo">Desenvolvedor Júnior</span>
@@ -82,9 +146,9 @@
             <li>CSS</li>
             <li>JavaScript</li>
           </ul>
-        </div>
+        </div> -->
 
-        <div class="empresa">
+        <!-- <div class="empresa">
           <span class="empresa-ano">2023</span>
           <h3 class="empresa-titulo">Brafé</h3>
           <span class="empresa-titulo">Desenvolvedor Júnior</span>
@@ -98,7 +162,7 @@
             <li>UX Design</li>
             <li>UI Design</li>
           </ul>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -109,7 +173,7 @@
         <div>
           <p class="formacao-texto">
             Minha mais recente experiência, foi com o curso de
-            <strong>UI/UX Design</strong> que fiz na
+            <strong>HTML/CSS/JS</strong> que fiz na
             <span class="origamid">ORIGAMID</span>. Além disso, me mantenho
             sempre atualizado com cursos intensivos online relacionados a
             tecnologia.
@@ -118,32 +182,46 @@
           <ul class="curso-lista">
             <li class="curso">
               <span class="curso-site">ORIGAMID</span>
-              <h3 class="curso-aula">UI Design [17 Horas]</h3>
+              <h3 class="curso-aula">HTML/CSS<br>[46 Horas]</h3>
               <span class="curso-estado">CONCLUÍDO</span>
+              <a class="certificado" href="https://www.origamid.com/certificate/df7f556d">certificado</a>
             </li>
             <li class="curso">
               <span class="curso-site">ORIGAMID</span>
-              <h3 class="curso-aula">CSS Flexbox [6 Horas]</h3>
+              <h3 class="curso-aula">UI Design<br>[34 Horas]</h3>
               <span class="curso-estado">CONCLUÍDO</span>
+              <a class="certificado" href="https://www.origamid.com/certificate/b15b0ebe">certificado</a>
             </li>
             <li class="curso">
               <span class="curso-site">ORIGAMID</span>
-              <h3 class="curso-aula">CSS Grid Layout [10 Horas]</h3>
+              <h3 class="curso-aula">CSS Flexbox<br>[6 Horas]</h3>
+              <span class="curso-estado">CONCLUÍDO</span>
+              <a class="certificado" href="https://www.origamid.com/certificate/8fa90288">certificado</a>
+            </li>
+            <li class="curso">
+              <span class="curso-site">ORIGAMID</span>
+              <h3 class="curso-aula">CSS Grid Layout<br>[10 Horas]</h3>
+              <span class="curso-estado">CONCLUÍDO</span>
+              <a class="certificado" href="https://www.origamid.com/certificate/4a38808e">certificado</a>
+            </li>
+            <li class="curso">
+              <span class="curso-site">CURSOEMVIDEO</span>
+              <h3 class="curso-aula">JavaScript<br>[40 Horas]</h3>
               <span class="curso-estado">CONCLUÍDO</span>
             </li>
             <li class="curso">
               <span class="curso-site">CURSOEMVIDEO</span>
-              <h3 class="curso-aula">JavaScript [40 Horas]</h3>
+              <h3 class="curso-aula">HTML e CSS3 - 5 MÓDULOS<br>[40 HORAS]</h3>
               <span class="curso-estado">CONCLUÍDO</span>
             </li>
             <li class="curso">
               <span class="curso-site">CURSOEMVIDEO</span>
-              <h3 class="curso-aula">HTML e CSS3 5 MÓDULOS [40 HORAS]</h3>
+              <h3 class="curso-aula">Algoritmo<br>[40 HORAS]</h3>
               <span class="curso-estado">CONCLUÍDO</span>
             </li>
             <li class="curso">
               <span class="curso-site">CURSOEMVIDEO</span>
-              <h3 class="curso-aula">ALGORITMO [40 HORAS]</h3>
+              <h3 class="curso-aula">GIT e GITHUB<br>[20 HORAS]</h3>
               <span class="curso-estado">CONCLUÍDO</span>
             </li>
           </ul>
@@ -173,9 +251,13 @@
       <div class="footer-container">
         <p class="footer-texto">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋</p>
         <ul class="footer-contato">
-          <li>crilordz@gmail.com</li>
-          <li>+55 67 99167-5543</li>
-          <li><a href="#">@crilordz</a></li>
+          <li><a href="mailto:crilordz@gmail.com">crilordz@gmail.com</a></li>
+          <li><a href="tel:+5567991675543">+55 67 99167-5543</a></li>
+          <div class="redes">
+            <a href="https://facebook.com/crilordz" target="_blank" rel="external"><img src="./assets/img/redes/redes-footer/facebook.svg" alt="Facebook"></a>
+            <a href="https://github.com/crilord" target="_blank" rel="external"><img src="assets/img/redes/redes-footer/github.svg" alt="GitHub"></a>
+            <a href="https://linkedin.com/in/crilord" target="_blank" rel="external"><img src="assets/img/redes/redes-footer/linkedin.svg" alt="LinkedIn"></a>
+          </div>
         </ul>
         <p class="footer-copy">Alguns direitos reservados.</p>
       </div>

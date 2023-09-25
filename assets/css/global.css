@@ -1,5 +1,5 @@
 * {
-  font-family: 'Fira Sans', Arial, sans-serif;
+  font-family: "Fira Sans", Arial, sans-serif;
   margin: 0px;
   padding: 0px;
   list-style: none;
@@ -8,7 +8,16 @@
 img {
   max-width: 100%;
   height: auto;
-  display: bl
+  display: bl;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
 }
 
 .subtitulo {
@@ -19,10 +28,56 @@ img {
   max-width: 4ch;
 }
 
+.botao {
+  background-color: white;
+  text-transform: uppercase;
+  border-radius: 4px;
+  max-width: max-content;
+  cursor: pointer;
+  grid-column: 2;
+  justify-self: end;
+  padding: 12px 24px;
+  border: 1px solid white;
+}
+
+.botao:hover {
+  border: 1px solid #C0D5E5;
+}
+
+.botao.seta {
+  display: flex;
+  align-items: center;
+}
+
+.botao.seta::after {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 9px;
+  margin-left: 8px;
+  background: url(../img/seta.svg);
+  transition: transform 0.2s;
+}
+
+.botao.seta:hover::after {
+  transform: translateX(4px);
+}
+
+.botao-texto {
+  color: #111;
+}
+
 @media (max-width: 800px) {
   .subtitulo {
     font-size: 3rem;
     text-transform: capitalize;
     max-width: initial !important;
+  }
+  .botao {
+    padding: 10px 20px;
+  }
+
+  .botao.seta::after {
+    display: none;
   }
 }

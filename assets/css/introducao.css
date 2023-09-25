@@ -31,6 +31,12 @@
   color: #525252;
 }
 
+.redes {
+  margin-top: 12px;
+  display: flex;
+  gap: 32px;
+}
+
 @media (max-width: 1000px) {
   .intro h1 {
     font-size: 3rem;
@@ -62,7 +68,10 @@
   .intro {
     grid-template-columns: 1fr;
   }
-  .intro img {
+  #img-perfil {
     display: none;
+  }
+  .redes {
+    gap: 12px;
   }
 }

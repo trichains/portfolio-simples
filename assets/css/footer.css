@@ -20,7 +20,7 @@
   text-indent: 20px;
 }
 
-.footer-container p::before {
+.footer-texto::before {
   content: "";
   width: 14px;
   height: 20px;
@@ -48,7 +48,6 @@
   font-size: 1.125rem;
   color: #8f8f8f;
 }
-
 
 @media (max-width: 800px) {
   .footer-container {
